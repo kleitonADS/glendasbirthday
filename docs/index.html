@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Happy Birthday - Glenda 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/main.css">  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script src="./js/main.js"></script> 
+  <script>var submitted = false; </script>
+
+</head>
+<body>
+  <nav class="navbar" id="top">
+    <div class="inner">
+      <a href="#" class="playPauseBtn">Play/Pause</a>
+      <div id="waveform"></div>
+    </div>
+  </nav>
+  <header class="container">
+    <section class="content">
+      <h1><strong>Glenda`s</strong> turning 34 again</h1>
+      <p class="sub-title"><strong>Help us celebrate on </strong> <br /> Sarturday, 04.04.2020 , 4Pm <br /> 1177 Dufferin Street , Toronto.</p>
+      <p class="sub-title"> </p>
+      <p><a class="button" id="load-more-content" href="#top">Confirmation</a></p>
+      
+      <div id="more-content">
+        <blockquote>
+         <p id="mensage_send"> <strong>Thank You !  &#128512; <br/><span id="nameForm"></span></strong>  </p> 
+
+        <form id="form1" action="" class="formdiv" method="" target="hidden_iframe" onsubmit="submitted=true;">
+          <input id="name" type="text" name="entry.1851068946" placeholder="Name" required >
+          <label for="options">Options</label>
+          <select id="options" name="entry.105319686" required>
+            <option>Going</option>
+            <option>Maybe</option>
+            <option>No Going</option>
+          </select>
+          <button class="button">Send</button>
+         
+        </form>
+        </blockquote>
+        <iframe id="hidden_iframe" style="display:none;" name="hidden_iframe" onload="if(submitted){}"></iframe>
+      
+      </div>
+    </section>
+  </header>
+</body>
+</html>

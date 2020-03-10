@@ -1,0 +1,275 @@
+
+html, body, .container {
+  height: 100%;
+}
+
+/* Reset */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Basic */
+body { 
+  font: 18px/23px "Cantarell", sans-serif;
+  color: #ffffff;
+  background-image: url(../images/background-photo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+}
+
+h1 {
+  color: #efecec;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+a {
+  color: #ffffff;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+blockquote {
+  display: block;
+  max-width: 480px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #512d7c;
+  color: #e1e1e1;
+  text-align: left;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+label{
+  margin-left: 80px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+
+/* Layout */
+
+.navbar {
+  width: 100%;
+  background-color: #512d7c;
+  height: 60px;
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+  .inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center; 
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #waveform{
+    width: 80%;
+  }
+
+.navbar a {
+  display: inline-block;
+  border: 1px solid #fff;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+  padding: 2px 15px;
+  text-decoration: none;
+  width: 20%;
+}
+
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Special */
+.sub-title {
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #351051c7;
+}
+
+#more-content {
+  display: none;
+}
+
+.formdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+input{
+  display: flex;
+  width: 60%;
+  border: 1px solid #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #512d7c;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2px 15px;
+  text-decoration: none;
+  margin: 0 auto 10px;
+}
+
+button{
+  display: flex;
+  width: 67%;
+  border: 1px solid #fff;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+  padding: 2px 15px;
+  text-decoration: none;
+  margin: 0 auto 10px;
+  background-color: transparent;
+}
+
+select{
+  background-color: transparent;
+  border-radius: 3px;
+  background-image: url(../images/arrow_down.svg);
+  background-position: top -1px right 1px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 30px; 
+  width: 67%;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+#mensage_send {
+
+  color: white;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(../images/background-photo-mobile-devices.jpg);
+  }
+}
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+  
+  .container {
+    position: relative;
+    display: block;
+    float: left;
+    vertical-align: baseline;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+  }
+  
+  #more-content {
+    float: left;
+    margin-right: 10px;
+    
+  }
+  
+  body h1 {
+    font-size: 18px;
+    line-height: 23px;
+  } 
+  
+  .content, blockquote {  
+    display: inline;
+    margin: 0 auto;
+    padding-top: 80px;
+    vertical-align: baseline;
+  }
+
+  blockquote {
+    width: 150px;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: transparent;
+  }
+
+
+  .button, p {
+    max-width: 150px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  html, body, .container {
+    height: auto;
+  }
+}
