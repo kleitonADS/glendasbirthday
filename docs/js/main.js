@@ -35,7 +35,7 @@ $(document).ready(function()
     barWidth: 1,
   });
 
-  wavesurfer.load('../song/anita.m4a');
+  wavesurfer.load('./song/anita.m4a');
   wavesurfer.on('ready', function () {
     wavesurfer.play();
   });
