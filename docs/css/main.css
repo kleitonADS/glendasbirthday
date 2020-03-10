@@ -109,6 +109,7 @@ label{
   border-radius: 3px;
   padding: 2px 15px;
   text-decoration: none;
+  cursor: pointer;
   width: 20%;
 }
 
@@ -145,6 +146,7 @@ label{
   text-align: center;
   text-transform: uppercase;
   background-color: #351051c7;
+  cursor: pointer;
 }
 
 #more-content {

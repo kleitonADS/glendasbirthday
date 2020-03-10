@@ -9,13 +9,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://unpkg.com/wavesurfer.js"></script>
   <script src="./js/main.js"></script> 
-  <script>var submitted = false; </script>
+  <script>var submitted = false; 
+  </script>
 
 </head>
 <body>
   <nav class="navbar" id="top">
     <div class="inner">
-      <a href="#" class="playPauseBtn">Play/Pause</a>
+      <a class="playPauseBtn">Play/Pause</a>
       <div id="waveform"></div>
     </div>
   </nav>
@@ -47,5 +48,26 @@
       </div>
     </section>
   </header>
+  <script>
+  
+  var wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: 'white',
+  progressColor: '#6d21a5',
+  barWidth: 1,
+});
+
+wavesurfer.load('./song/anita.m4a');
+wavesurfer.on('ready', function () {
+  wavesurfer.play();
+});
+
+document.querySelector('wave').style.height = "30px";
+document.querySelector('wave').style.marginLeft = "20px";
+
+document.querySelector('.playPauseBtn').addEventListener('click', function() {
+  wavesurfer.playPause();
+});
+  </script>
 </body>
 </html>

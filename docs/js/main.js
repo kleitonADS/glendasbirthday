@@ -1,23 +1,10 @@
+
+
+
+
 $(document).ready(function()
 {
-  var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'white',
-    progressColor: '#6d21a5',
-    barWidth: 1,
-  });
-
-  wavesurfer.load('./song/anita.m4a');
-  wavesurfer.on('ready', function () {
-    wavesurfer.play();
-  });
-
-  document.querySelector('wave').style.height = "30px";
-  document.querySelector('wave').style.marginLeft = "20px";
-
-  document.querySelector('.playPauseBtn').addEventListener('click', function() {
-    wavesurfer.playPause();
-  });
+ 
 
   $('#load-more-content').click(function()
   {
@@ -48,7 +35,7 @@ $(document).ready(function()
   });
 
  
-
+  $('#options').val('');
   $('#mensage_send').hide();
 
   $('#form1').on('submit', function(e) {
@@ -84,3 +71,5 @@ $(document).ready(function()
 });
 
 });
+
+
