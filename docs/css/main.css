@@ -120,6 +120,19 @@ label{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.playPauseBtn{
+  color: white;
+  display: inline-block;
+  border: 1px solid #fff;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+  padding: 2px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 20%;
+}
+
 .content {
   display: table-cell;
   vertical-align: middle;
@@ -273,5 +286,9 @@ select{
 
   html, body, .container {
     height: auto;
+  }
+  .playPauseBtn{
+  
+    width: 25%;
   }
 }
